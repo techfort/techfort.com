@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+$background: url('/assets/images/polygons_small.jpg') center;
+$gray: rgba(100, 100, 100, 0.5);
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+body {
+  background: black;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+.jumbotron {
+  background: none;
+  color: white;
+  font-family: 'Lato', Sans;
+  text-shadow:
+    0px 1px 1px black,
+    0px 2px 3px black,
+    0px 3px 20px black;
+}
+h1, h2 { font-family: 'Audiowide', Sans; font-size: 2.9em;}
+.navbar {
+  height: 30px;
+  background: rgba(240, 240, 240, 0.2);
+  /* color: rgba(240,240,220, 0.9); */
+  color: black;
+  vertical-align: middle;
+  a {
+  color: black !important;
+  }
+}
+.active {
+    background: none !important;
+}
+.content-head {
+  padding-top: 80px;
+  background: $background !important;
+  height: 300px;
+}
+.thumbnail {
+  background: none;
+  font-family: Lato;
+  color: $gray;
+  border: none;
+}
+// injector
+// endinjector

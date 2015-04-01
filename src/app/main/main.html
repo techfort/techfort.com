@@ -1,0 +1,43 @@
+<div>
+
+  <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+  <div class="content-head container-fluid">
+    <div class="jumbotron text-center">
+      <h1>TECHFORT</h1>
+      <p class="lead">Modern Software Development</p>
+    </div>
+    <div class="col-sm-12 col-md-12 text-center">
+      <ul class="list-inline">
+        <li><i class="fa fa-paper-plane fa-4x"></i>
+
+      </ul>  
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-12 text-center">
+    <h2>JAVASCRIPT CONSULTANCY</h2>
+    <p>At TechFort we develop the most modern, high quality, secure software.</p>
+    
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
+        <div class="caption">
+          <h3>{{awesomeThing.title}}</h3>
+          <p>{{awesomeThing.description}}</p>
+          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
+  </div>
+
+</div>
