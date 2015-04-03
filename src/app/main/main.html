@@ -1,43 +1,98 @@
 <div>
 
-  <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
+  <div ng-include="'components/navbar/navbar.html'"></div>
   <div class="content-head container-fluid">
-    <div class="jumbotron text-center">
+    <div class="main-heading text-center">
       <h1>TECHFORT</h1>
       <p class="lead">Modern Software Development</p>
     </div>
-    <div class="col-sm-12 col-md-12 text-center">
+    <div class="col-sm-12 col-md-12 text-center clearfix">
       <ul class="list-inline">
-        <li><i class="fa fa-paper-plane fa-4x"></i>
-
-      </ul>  
+        <li><a href="http://github.com/techfort"><i class="fa fa-github fa-3x"></i></a></li>
+        <li><a href="https://twitter.com/tech_fort"><i class="fa fa-twitter fa-3x"></i></a></li>
+        <li><a href="https://ie.linkedin.com/in/joeminichino"><i class="fa fa-linkedin fa-3x"></i></a></li>
+        <li><a href="mailto:info.techfort@gmail.com"><i class="fa fa-paper-plane fa-3x"></i></a></li>
+      </ul>
+      info.techfort { at } gmail { dot } com
     </div>
-  </div>
-  <div class="row">
-  <div class="col-sm-12 text-center">
-    <h2>JAVASCRIPT CONSULTANCY</h2>
-    <p>At TechFort we develop the most modern, high quality, secure software.</p>
-    
-  </div>
-  </div>
 
-  <div class="row">
-    <div class="col-sm-4 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-        <div class="caption">
-          <h3>{{awesomeThing.title}}</h3>
-          <p>{{awesomeThing.description}}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
-        </div>
+  </div>
+  <div class="main-content container-fluid">
+    <div class="row">
+
+      <div class="col-sm-12 col-md-12 text-center" id="services">
+        <h2>OUR SERVICES</h2>
+        <p>
+          We specialize in the design and development of Modern JavaScript product, both in the front-end and back-end.<br>
+          We develop Web Applications, Mobile Applications (with Phonegap / Cordova), and Desktop Applications (with NW.js)<br> 
+          We adopt the latest technologies and follow guidelines that will deliver a high quality maintainable product. <br>
+        </p>
       </div>
+      <div class="col-sm-12 col-md-12 text-center">
+        <i class="fa fa-gear fa-spin fa-3x"></i>
+
+        <h2>JAVASCRIPT DEVELOPMENT</h2>
+        <p>At TechFort we develop the most modern, high quality, secure software.</p>
+        <p>JavaScript is taking over the world.<br>
+          With the advent of node.js JavaScript has turned from the runt of the litter to the language of the web.<br>
+          Javascript can now power incredibly powerful web applications<br>
+          as well run on devices such as the Raspberry Pi.</p>
+          <p>We develop in JavaScript for the following reasons:
+            <ul>
+              <li>Ubiquity: JS can run everywhere <i class="fa fa-windows"></i> <i class="fa fa-linux"></i> <i class="fa fa-apple"> </i> <i class="fa fa-android"></i> <i class="fa fa-mobile"></i></li>
+              <li>Progress: JS is constantly evolving <i class="fa fa-space-shuttle"></i></li>
+              <li>Community: JS's community is enormous and active <i class="fa fa-group"></i></li>
+              <li>Performance: JS engines nowadays are really fast <i class="fa fa-dashboard"></i></li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-12 text-center">
+          <i class="fa fa-book fa-3x"></i>
+          <h2>JAVASCRIPT CONSULTANCY</h2>
+          <p>Our skills are at your disposal to improve the quality of your products.<br>
+          If you need any help with your project or if you feel we can bring useful skills to your team<br>
+          feel free to <a ng-href="#/#contact">get in touch</a>
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 technologies">
+          <div class="text-center"> 
+            <h2>SOME OF THE LIBRARIES WE USE</h2>
+            We love JavaScript in its plain form. But if you have a particular request,<br>or your team is already adopting particular frameworks, then here's a sample list of some of the frameworks we use:
+          </div>
+          <div class="col-sm-3 col-md-3" ng-repeat="awesomeThing in awesomeThings">
+            <div class="thumbnail">
+              <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" width="100" alt="{{awesomeThing.title}}">
+              <div class="caption"> 
+                <h3>{{awesomeThing.title}}</h3>
+                <p>{{awesomeThing.description}}</p>
+                <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 text-center" id="products">
+          <h2>PRODUCTS</h2>
+          We offer commercial support for <a href="http://lokijs.org" target="_blank">LokiJS</a>,<br>
+          a ubiquitous, fast in-memory datastore. If you are interested in a license, commercial and technical support,<br>
+          or custom feature development <a href="mailto:info.techfort@gmail.com">contact us</a>.
+        </div>
+
+        <div class="col-md-12 col-sm-12 text-center" id="contact">
+          <h2>GET IN TOUCH</h2>
+          <p>
+            <span class="field">Email:</span> <a href="mailto:info.techfort@gmail.com">info.techfort@gmail.com</a><br>
+            <span class="field">Call:</span> +353 87 6936712<br>
+          </p>
+        </div>
+
+      </div>
+
     </div>
+
+    <div class="footer text-center">
+      <p>&copy <a href="mailto:info.techfort@gmail.com">TechFort</a>, Cork, Ireland</p>
+    </div>
+
   </div>
-
-  <hr>
-
-  <div class="footer">
-    <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-  </div>
-
-</div>

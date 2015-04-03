@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Audiowide);
-$background: url('/assets/images/polygons_small.jpg') center;
-$gray: rgba(100, 100, 100, 0.5);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 
+$background: url('/assets/images/polygons_small.jpg') bottom repeat-y;
+$gray: rgba(100, 100, 100, 0.5);
+$reddish: #fb5c4b;
+$blueish: #4e3e47;
+hr { color: $gray; background: $gray;}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -19,12 +23,15 @@ $gray: rgba(100, 100, 100, 0.5);
 }
 
 body {
-  background: black;
+  background: $background;
+  background-attachment: fixed;
   padding: 0px;
   margin: 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 16px; */
+  color: white;
 }
-.jumbotron {
+.main-heading {
   background: none;
   color: white;
   font-family: 'Lato', Sans;
@@ -33,30 +40,75 @@ body {
     0px 2px 3px black,
     0px 3px 20px black;
 }
-h1, h2 { font-family: 'Audiowide', Sans; font-size: 2.9em;}
+h1 { font-family: 'Audiowide', Sans; font-size: 3.9em;}
+h2 { font-family: 'Lato'; font-size: 1.5em; color: $reddish;}
 .navbar {
   height: 30px;
-  background: rgba(240, 240, 240, 0.2);
-  /* color: rgba(240,240,220, 0.9); */
-  color: black;
+  background: rgba(0,0,0, 0.7);
   vertical-align: middle;
   a {
-  color: black !important;
+    color: white !important;
+    box-sizing: border-box;
   }
+  a:hover {
+      border-bottom: 3px solid $reddish;
+  }
+  border-bottom: none;
 }
+a { color: white !important}
 .active {
     background: none !important;
 }
 .content-head {
   padding-top: 80px;
-  background: $background !important;
-  height: 300px;
+  background: none!important;
+  height: 350px;
+  li {
+    background: rgba(255,255,255, 0.1);
+    padding: 6px;
+    width: 60px;
+    margin:1px
+  }
+}
+.main-content {
+  background: rgba(10,10,0,0.95) !important;
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 0.6);
+  ul {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 0.9em;
+    width: 30%;
+    margin-left: 35%;
+    li {
+      color: black;
+      background: rgba(255,255,255, 0.3);
+      padding: 6px;
+      margin: 1px;
+    }
+  }
 }
 .thumbnail {
-  background: none;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0,0,0, 0.95);
+  border-radius: 0px;
   font-family: Lato;
   color: $gray;
-  border: none;
+  text-shadow: 1px 1px 2px #000;
+  border-right: 1px solid rgba(100, 100, 100, 0.1);
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  font-size: 0.7em;
+  h3 { color: $blueish; }
+  a {
+    color: $gray !important;
+  }
+}
+.footer {
+  color: white;
+  text-shadow:
+    0px 1px 1px black;
 }
 // injector
 // endinjector
